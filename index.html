@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Document</title>
+	</head>
+
+	<body>
+		<button id="btn-0">Button 1</button>
+		<button id="btn-1">Button 2</button>
+		<button id="btn-2">Button 3</button>
+		<script type="text/javascript">
+			const prizes = ['A Unicorn!','A Hug!','Fresh Laundry!'];
+			//Ans:- closure in loops: a common mistake, need to replace var with let.
+			for(let btnNum = 0; btnNum < prizes.length; btnNum++) {
+				document.getElementById(`btn-${btnNum}`).onclick = () => {
+					alert(prizes[btnNum]);
+				};
+			}
+		</script>
+	</body>
+
+</html>
