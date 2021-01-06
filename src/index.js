@@ -1,12 +1,3 @@
-// function stringToNumber(str) {
-
-// 	if(str.match(/^[a-z][a-z][a-z]/)) {
-// 		return 0;
-// 	} else {
-// 		let numb = str.match(/\d/g).join("");
-// 		return +numb;
-// 	}
-// }
 
 function stringToNumber(str) {
 	if(str.match(/^[a-z][a-z][a-z]/)) {
@@ -20,6 +11,4 @@ function stringToNumber(str) {
 	}
 }
 
-// let res = stringToNumber("abc22");
-// console.log(res,typeof (res));
 module.exports = stringToNumber;
